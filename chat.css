@@ -1,0 +1,182 @@
+@import url(http://fonts.googleapis.com/css?family=Kaushan+Script);
+@import url(http://fonts.googleapis.com/css?family=Delius+Unicase:400,700);
+  * { Box-sizing: Border-box } 
+  body{
+    font-family: 'Delius Unicase', cursive;
+  }
+  fieldset{
+    display:block;
+    width:90%;
+    margin:auto;
+    height:95vh;
+  }
+  fieldset#profile {
+    width:30%;
+  }
+  fieldset#profile label{
+    width:85%;
+    display:block;
+  }
+  fieldset#profile label input{
+    float:right;
+  }
+  fieldset#profile input[type=submit]{
+    margin:auto;
+    display:block;
+    margin-top:5%;
+  }
+  #chatbox{
+    display:block;
+    width:90%;
+    margin:auto;
+    background-color:#ddd;
+    height:75vh;
+    overflow:auto;
+    padding-left:5%;
+    padding-right:5%;
+    background:#ddd url("amberandbrice.png") no-repeat fixed  center;
+  }
+  div.message_holder{
+    display:block;
+    width:50%;
+    float:left;
+    color:rgba(10,10,10,1);
+    font-family: 'Delius Unicase', cursive;
+    border-radius:25px;
+    background-color:rgba(100,150,250,.8);
+    padding:1% 1%;
+    margin-bottom:2px;
+    opacity:.8;
+    clear:both;
+  }
+  span.message{
+    display:block;
+    clear:both;
+  }
+  
+  div.amber{
+    background-color:orange;
+    
+  }
+  div.bfaz{
+    background-color:pink;
+  }
+  div.angela{
+    background-color:red;
+  }
+
+  
+  
+  #ChatForm input{
+    width:90%;
+    margin:auto;
+    display:block;
+    margin-top:1%;
+    font-size:25px;
+  }
+  #ChatForm input[type=submit]{
+    color:rgba(0,0,0,1);
+    background-color:rgba(200,200,200,.9)
+  }
+  
+  /*Logout Button*/
+  /*#logout{
+    position:fixed;
+    right:1.5%;
+    top:0;
+    background-color:rgba(200,200,200,.7);
+    text-decoration:none;
+    font-weight:900;
+    font-family: 'Delius Unicase', cursive;
+    color:rgba(20,20,20,1);
+    padding:.5%;
+    
+  }
+  #profile{
+    position:fixed;
+    right:1.5%;
+    top:5%;
+    background-color:rgba(200,200,200,.7);
+    text-decoration:none;
+    font-weight:900;
+    font-family: 'Delius Unicase', cursive;
+    color:rgba(20,20,20,1);
+    padding:.5%;
+    
+  }*/
+  nav{
+    position:fixed;
+    right:1.5%;
+    top:5%;
+    background-color:rgba(200,200,200,.7);
+    text-decoration:none;
+    font-weight:900;
+    font-family: 'Delius Unicase', cursive;
+    color:rgba(20,20,20,1);
+    
+    text-align:center;
+  }
+  nav a,nav a:visited,nav a:active,nav a:hover{
+    text-decoration:none;
+    display:block;
+    color:rgba(20,20,20,1);
+    padding:1%;
+  }
+  /*nav #logout,#nav #profile,*/ nav a:not(:last-child){
+    border-bottom:2px #777 inset;
+  }
+  /*Chat Box Scrollbar Styling */
+  /*
+  #chatbox ::-webkit-scrollbar              {
+    visible:visible;
+    width:25px;
+    }
+  #chatbox ::-webkit-scrollbar-button       { 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+    }
+  #chatbox ::-webkit-scrollbar-track        {
+    bborder-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+    }
+  ::-webkit-scrollbar-track-piece  { 
+    
+    visible:visible;
+    }
+  ::-webkit-scrollbar-thumb        { 
+    
+    visible:visible;
+    }
+  ::-webkit-scrollbar-corner       { 
+    
+    visible:visible;
+    }
+  ::-webkit-resizer                { 
+    
+    visible:visible;
+    }
+  
+  */
+  /* stuff for users box */
+  #users{
+    
+    position:fixed;
+    top:5%;
+    left:1.5%;
+    background-color:rgba(200,200,200,.7);
+  }
+  span.dot{
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    border:1px solid orange;
+    display:inline-block;
+  }
+  span.red-dot{
+    background-color:red;
+  }
+  span.green-dot{
+    background-color:green;
+  }
+  
+  
