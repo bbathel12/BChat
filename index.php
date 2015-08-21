@@ -3,6 +3,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="/chat/scripts.js"></script>
   <link rel="stylesheet" href="/chat/chat.css">
+  <?php include('header.html'); ?>
   <?php
     ini_set('display_errors',1);
     session_start();
@@ -61,7 +62,7 @@
     //sends chat on submit
     $("#ChatForm").submit(function(event){event.preventDefault();sendchat(<?php echo $_SESSION['user_id'];?>)})
     //gets chats every 2 seconds
-    setInterval(function () {$.get("/chat/get_chats.php?lastMessage="+window.lastMessageNumber,function(data){message = data;updateChat(data)})},2000);
+    setInterval(function () {$.get("/chat/get_chats.php?lastMessage="+window.lastMessageNumber,function(data){message = data;updateChat(data);$('.message_holder').last().children().emoticonize(true);})},2000);
     //sends login signal every 30 seconds
     $.get("logged_in.php?logged_in=true&user_id=<?php echo strtolower($_SESSION['user_id']);?>");
     //sets up mute button
@@ -98,6 +99,7 @@
 
 <audio src="74421^Ding.mp3" id="Ding_Sound" style="display:none;"></audio>
   <div id="users"></div>
+<?php include('footer.php');?>
 </body>
 
 </html>
