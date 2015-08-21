@@ -8,6 +8,7 @@
             window.lastMessageNumber +=1
           }
           $(message).insertBefore($('#ChatBox div#end'))
+$('.message_holder').last().children().emoticonize(true);
      document.getElementById('Ding_Sound').play();
 	$('#chatbox').scrollTop($('#chatbox')[0].scrollHeight);
       }
